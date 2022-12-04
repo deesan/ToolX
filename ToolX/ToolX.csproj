@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6EC3A41B-3662-4686-8483-668BD05E1E6F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ToolX</RootNamespace>
+    <AssemblyName>ToolX</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Programs\.Net Soft &amp; framework\UI &amp; UX\Guna\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Programs\.Net Soft &amp; framework\UI &amp; UX\Guna\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\..\..\..\ToolX Zip\Material Design Elements\Material Design Elements\packages\MaterialSkin.2.2.1.3\lib\net461\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\ContextMenuStripX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ContextMenuStripX.Designer.cs">
+      <DependentUpon>ContextMenuStripX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CustomMenuStrip\CustomMenuStripColorTable.cs" />
+    <Compile Include="Components\CustomMenuStrip\MenuStripX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\CustomMenuStrip\MenuStripX.Designer.cs">
+      <DependentUpon>MenuStripX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CustomStatusStrip\CustomStatusStripColorTable.cs" />
+    <Compile Include="Components\CustomStatusStrip\StatusStripX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\CustomStatusStrip\StatusStripX.Designer.cs">
+      <DependentUpon>StatusStripX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CustomToolStrip\CustomToolStripColorTable.cs" />
+    <Compile Include="Components\CustomToolStrip\ToolStripX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\CustomToolStrip\ToolStripX.Designer.cs">
+      <DependentUpon>ToolStripX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\LabelX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\MinMaxPictureBoxX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\MinMaxPictureBoxX.Designer.cs">
+      <DependentUpon>MinMaxPictureBoxX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\TabControlX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\tabcontrol2X.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\tabcontrol2X.Designer.cs">
+      <DependentUpon>tabcontrol2X.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotePad\Find_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotePad\Find_Form.Designer.cs">
+      <DependentUpon>Find_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotePad\GoTo_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotePad\GoTo_Form.Designer.cs">
+      <DependentUpon>GoTo_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotePad\MyRichTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NotePad\MyRichTextBox.Designer.cs">
+      <DependentUpon>MyRichTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotePad\TabPageX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NotePad\NotePadMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotePad\NotePadMain.Designer.cs">
+      <DependentUpon>NotePadMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotePad\PrintRichTextBox.cs" />
+    <Compile Include="NotePad\Replace_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotePad\Replace_Form.Designer.cs">
+      <DependentUpon>Replace_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotePad\RichTextBoxX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="NotePad\Find_Form.resx">
+      <DependentUpon>Find_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotePad\GoTo_Form.resx">
+      <DependentUpon>GoTo_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotePad\MyRichTextBox.resx">
+      <DependentUpon>MyRichTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotePad\NotePadMain.resx">
+      <DependentUpon>NotePadMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotePad\Replace_Form.resx">
+      <DependentUpon>Replace_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Calculator\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\Icon\maximize_window_Resize_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\Icon\restore_window_Resize_48px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
